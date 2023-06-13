@@ -1,0 +1,260 @@
+:root {
+    --gray-150: #D8DFE8;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    --light-blue-100: #F3F5FC;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--light-blue-100);
+}
+
+header {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+}
+
+button {
+    border: 1px solid var(--dark-blue-300);
+    border-radius: 24px;
+    min-width: 332px;
+    width: 40%;
+    padding: 20px;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 400ms ease, color 400ms ease;
+}
+
+.body {
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.body-input {
+    padding: 150px 40px 72px;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-input .text-area {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    border: none;  
+    padding: 2px 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5;
+    background-color: var(--light-blue-100);
+    box-shadow: 0px 24px 32px -8px rgba(154, 154, 154, 0.2);
+    color: var(--dark-blue-300);
+    flex: auto;
+}
+
+.body-input .text-area::-moz-placeholder {
+    font-size: 1em;
+    font-family: "Inter", sans-serif;
+    color: var(--dark-blue-300);
+}
+
+.body-input .text-area:-ms-input-placeholder {
+    font-size: 1em;
+    font-family: "Inter", sans-serif;
+    color: var(--dark-blue-300);
+}
+
+  .body-input .text-area::placeholder {
+    font-size: 1em;
+    font-family: "Inter", sans-serif;
+    color: var(--dark-blue-300);
+}
+
+.body-input p {
+    font-size: 0.75em;
+    color: var(--gray-400);
+    padding: 20px 0 15px;
+}
+
+.body-input p:before {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.body-input-botones {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.body-input-botones #btn-encriptar {
+    background-color: var(--dark-blue-300);
+    color: white;
+}
+
+.body-input-botones #btn-encriptar:hover {
+    background-color: var(--gray-150);
+    color: var(--dark-blue-300);
+}
+
+.body-input-botones #btn-desencriptar {
+  background-color: var(--gray-150);
+  color: var(--dark-blue-300);
+}
+.body-input-botones #btn-desencriptar:hover {
+  background-color: var(--dark-blue-300);
+  color: white;
+}
+
+.body-output {
+    padding: 40px;
+    height: 100%;
+}
+
+.body-output-card {
+    width: 400px;
+    height: 100%;
+    padding: 32px;
+    border-radius: 32px;
+    background-color: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.body-output-card h3 {
+    font-size: 1.5em;
+    color: var(--gray-500);
+    margin: 32px 0 16px;
+}
+
+.body-output-card h4 {
+    font-size: 1em;
+    color: var(--gray-400);
+    line-height: 1.5;
+}
+
+.body-output-card-text {
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: var(--gray-4000);
+    text-align: start;
+    flex: auto;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+.body-output-card #btn-copiar {
+    background-color: white;
+    color: var(--dark-blue-300);
+    width: 100%;
+    margin-top: 32px;
+}
+
+  .body-output-card #btn-copiar:hover {
+    background-color: var(--dark-blue-300);
+    color: white;
+}
+
+.body-output .to-hide {
+    display: none;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(10, 56, 113, 0.04);
+    padding: 20px;
+}
+
+.social-links{
+text-align: center;
+}
+
+.social-links .fa{
+height: 40px;
+width: 40px;
+font-size: 25px;
+line-height: 40px;
+border: 1px solid #0a3871;
+margin: 40px 5px 0;
+color: #495057;
+cursor: pointer;
+transition: .5s;
+}
+
+.social-links .fa:hover{
+background: #0a3871;
+color: #fff;
+transform: translateY(-7px);
+}
+
+.social-links p{
+font-size: 13px;
+margin-top: 10px;
+}
+.social-links .fa-linkedin:hover{
+background: #0077b5;
+color: #fff;
+transform: translateY(-7px);
+}
+.social-links .fa-github:hover{
+background: #1d1a1a;
+color: #fff;
+transform: translateY(-7px);
+}
+
+.social-links h3{
+font-size: 15px;
+margin-top: 10px;
+color: #0A3871;
+}
+
+@media screen and (max-width: 770px){
+    .footer{
+        flex-basis: 100%;
+        font-size: 14px;
+     }
+     .footer-img{
+        top: 25%;
+     }
+}
+
+
+
+@media screen and (max-width: 100%) {
+    header {
+      left: 40px;
+    }
+    body {
+      height: auto;
+    }
+    .body-input {
+      padding: 150px 40px 24px;
+    }
+    .text-area {
+      min-height: 320px; /*49.5vh*/
+    }
+    .body-output-card {
+      width: 688px;
+    }
+    .body-output-card img {
+      display: none;
+    }
+    .body-output-card h3 {
+      margin: 0 0 16px;
+    }
+  }
